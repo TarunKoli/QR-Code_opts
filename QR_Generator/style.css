@@ -49,12 +49,30 @@ header p{
     padding: 0 17px;
     border: 1px solid #999;
 }
-.form button{
+.form .btns{
+    display: flex;
+}
+.btns button{
     color: #fff;
     cursor: pointer;
     margin-top: 20px;
     font-size: 17px;
     background: #3498D8;
+}
+.btns button:nth-child(1){
+    width: 100%;
+    transition: 0.3s;
+}
+.btns .download{
+    width: 0;
+    transition: 0.3s;
+}
+.wrapper.active .btns button:nth-child(1){
+    width: 75%;
+    margin-right: 3%;
+}
+.wrapper.active .download{
+    width: 22%;
 }
 .wrapper .qr-code{
     opacity: 0;
