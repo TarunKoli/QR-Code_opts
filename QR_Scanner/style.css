@@ -99,3 +99,9 @@ form .content p{
     border-radius: 5px;
     width: calc(100% / 2 - 10px);
 }
+
+@media(max-width:460px){
+    .wrapper{
+        max-width: 300px;
+    }
+}
